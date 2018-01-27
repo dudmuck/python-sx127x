@@ -12,11 +12,15 @@ GPIO pin access is required for `DIO0` pin and antenna switch pin (if RF switch 
 [Enable SPI on RPi](https://www.raspberrypi-spy.co.uk/2014/08/enabling-the-spi-interface-on-the-raspberry-pi/)
 ### py-spidev installation
 `sudo apt-get update`
+
 `sudo apt-get install python-dev`
 
 `git clone https://github.com/doceme/py-spidev`
+
 `cd py-spidev`
+
 `sudo python setup.py install`
+
 ## RPi pin connections to LoRa radio
 |     | Pin#   | Pin#  | |
 |----:|:------:|:-----:|:---- |
@@ -44,7 +48,7 @@ GPIO pin access is required for `DIO0` pin and antenna switch pin (if RF switch 
 [Dragino board](http://wiki.dragino.com/index.php?title=Lora/GPS_HAT) connects SPI-NSS to pin 22, requiring software controlof SPI chip select (example not provided). If you want spidev control of NSS, connect pin 24 to LORA-NSS. Dragino uses pin 7 for `DIO0`.  Hope RF doesnt require antenna switch control from CPU, this is done on Hope RF board.
 
 This code was tested with [SX1276 Shield](https://os.mbed.com/components/SX1276MB1xAS/).
-.
+
 Fixed RPi pins: MOSI, MISO SCLK, NSS.
 Variable pins: `DIO0`, antenna switch
 LORA-RESET pin should be left floating for normal operation.
