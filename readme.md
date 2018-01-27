@@ -2,7 +2,8 @@
     
 # LoRa physical layer python example
 This is for hobbyists or students who wish to create simple point-to-point link using LoRa physical layer.  
-This is not LoRaWAN.
+This is **not** LoRaWAN.
+
 LoRaWAN is a MAC layer (and network infrastructure) which runs on top of LoRa physical layer.
 
 This driver operates SX1272 or SX1276.  The chip type is detected on startup, meaning this driver works with both devices.
