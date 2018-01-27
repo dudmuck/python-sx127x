@@ -40,6 +40,7 @@ GPIO pin access is required for `DIO0` pin and antenna switch pin (if RF switch 
 | |35|36| |
 | |37|38| |
 | gnd |39|40| |
+
 [Dragino board](http://wiki.dragino.com/index.php?title=Lora/GPS_HAT) connects SPI-NSS to pin 22, requiring software controlof SPI chip select (example not provided). If you want spidev control of NSS, connect pin 24 to LORA-NSS. Dragino uses pin 7 for `DIO0`.  Hope RF doesnt require antenna switch control from CPU, this is done on Hope RF board.
 
 This code was tested with [SX1276 Shield](https://os.mbed.com/components/SX1276MB1xAS/).
